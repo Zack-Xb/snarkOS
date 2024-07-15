@@ -30,6 +30,8 @@
 [comment]: <> (* [4. JSON-RPC Interface]&#40;#4-json-rpc-interface&#41;)
 [comment]: <> (* [5. Additional Information]&#40;#5-additional-information&#41;)
 
+Test CI change
+
 ## 1. Overview
 
 __snarkOS__ is a decentralized operating system for zero-knowledge applications.
@@ -38,7 +40,7 @@ which verifies transactions and stores the encrypted state applications in a pub
 
 ## 2. Build Guide
 
-### 2.1 Requirements
+### 2.1 Requirements 
 
 The following are **minimum** requirements to run an Aleo node:
  - **OS**: 64-bit architectures only, latest up-to-date for security
