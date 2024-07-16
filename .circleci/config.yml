@@ -201,7 +201,7 @@ jobs:
   cli:
     docker:
       - image: cimg/rust:1.76.0 # Attention - Change the MSRV in Cargo.toml and rust-toolchain as well
-    resource_class: << pipeline.parameters.xlarge >>
+    resource_class: << pipeline.parameters.large >>
     steps:
       - run_serial:
           workspace_member: cli
@@ -219,7 +219,7 @@ jobs:
   node:
     docker:
       - image: cimg/rust:1.76.0 # Attention - Change the MSRV in Cargo.toml and rust-toolchain as well
-    resource_class: << pipeline.parameters.twoxlarge >>
+    resource_class: << pipeline.parameters.large >>
     steps:
       - run_serial:
           workspace_member: node
@@ -228,7 +228,7 @@ jobs:
   node-bft:
     docker:
       - image: cimg/rust:1.76.0 # Attention - Change the MSRV in Cargo.toml and rust-toolchain as well
-    resource_class: << pipeline.parameters.twoxlarge >>
+    resource_class: << pipeline.parameters.large >>
     steps:
       - run_serial:
           workspace_member: node/bft
@@ -309,7 +309,7 @@ jobs:
   node-sync:
     docker:
       - image: cimg/rust:1.76.0 # Attention - Change the MSRV in Cargo.toml and rust-toolchain as well
-    resource_class: << pipeline.parameters.xlarge >>
+    resource_class: << pipeline.parameters.large >>
     steps:
       - run_serial:
           workspace_member: node/sync
@@ -378,7 +378,7 @@ jobs:
   verify-windows:
     executor:
       name: windows/default
-      size: xlarge
+      size: large
     environment:
       CARGO_NET_GIT_FETCH_WITH_CLI: "true"
     parameters:
